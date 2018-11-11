@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  div {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+}
+
+i {
+  padding-right: 5px;
+}
+
+.mid {
+  font-size: 20px;
+  width:100%;
+  text-align: center;
+  margin-left:140px;
+}
+.right{
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.right,
+.bar {
+  color: #666;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.sidebar {
+  position: fixed;
+  width: 13%;
+  transition: all 0.5s ease;
+  transform: translateX(-200%);
+  background: #999;
+  height: 100vh;
+}
+
+.sidebar ul a {
+  display: block;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF;
+  text-decoration: none;
+}
+.sidebar ul a:hover{
+  color: #0f0f0f;
+}
+
+.sidebar.show {
+  transform: translateX(0);
+}
+
+
+.container {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 10% 0;
+    padding: 20px;
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    p {
+      padding: 0;
+    }
+  }
+  img {
+    width: 70%;
+  }
+}
+
+
+.des {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #999;
+  line-height: 30px;
+  padding: 0;
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-top: -10%;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // border: 3px solid red;
+  width: 40%;
+  min-height: 30%;
+  img {
+    width: 50%;
+  }
+}
+
+#port {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0%;
+}
+
+#photo {
+  width: 70%;
+  margin-top: 10%;
+}
+
+#fox {
+  width: 24%;
+}
+
+h4 {
+  margin: 5% 0 0 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  nav {
+    margin-top: 5px;
+  }
+  .sidebar ul a {
+    font-size: 20px;
+    text-align: center;
+    margin: 10%;
+    color: #FFF;
+    &:hover {
+      color: #333;
+    }
+  }
+
+  .media {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .des {
+    font-size: 15px;
+    padding-bottom: 30px;
+  }
+}
+#spaceship{
+    width: 90%;
+    padding-left: 5%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+#grad {
+  width: 100px;
+  color: white;
+  background: linear-gradient(to bottom right, #22c1c3, #fdbb2d);
+}
+#grad2 {
+  width: 100px;
+  color: white;
+  background: linear-gradient(to bottom right, #0909FF, #fdbb2d);
+}
+
+#logo{
+  font-size: 30px;
+
+}
+#knockout{
+  color: #333333;
+  text-decoration: none;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    margin-right: 10px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+    width: 70%;
+
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    margin-top: 5px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+#edBtn{
+  margin-right: 10px;
+  margin-left:30px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+#stBtn{
+  margin-left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+#signup2{
+  display: none;
+}
+#cancelBtn{
+  position: absolute;
+  right: 150px;
+  width: 100px;
+}
+.join_btn{
+  text-transform: uppercase;
+  font-size: 25px;
+  width: 240px;
+  height: 60px;
+  border-radius: 80px;
+  line-height: 60px;
+  text-align: center;
+  border: 3px solid #3d0269;
+  box-shadow: 0 3px 9px black, inset 0 0 9px white;
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  margin: auto;
+  margin-bottom: 15px;;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.join_btn:before{
+  content:'';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #d300ff;
+  opacity: 0.7;
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+
+.join_btn:after{
+  content:'';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease 0.2s;
+}
+
+.join_btn:hover{
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.join_btn:hover:before{
+  top: 0;
+}
+
+.join_btn:hover:after{
+  top: 0;
+}
+.join_btn:hover, .join_btn:active, .join_btn:visited, .join_btn:focus {
+    text-decoration:none;
+}
